@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
+import MinusOne from "./components/Decrement";
+import AddOne from "./components/Increment";
+
 function App() {
+
+  // const number = () => {return prompt("Enter")};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AddOne />
+      <MinusOne />
     </div>
   );
 }
